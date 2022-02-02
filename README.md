@@ -8,7 +8,7 @@
 <!-- ![Screenshot](application.png) -->
 
 ### What is this?
-A React JS Application to display a hardcoded set of data! I got this small project as an interview question from a tech company.
+A React JS Application to display a hardcoded set of data as an interactive Bike Store! I got this small project as an interview question from a tech company.
 
 You can also use this application live at [keemcodes.com/bikeapp](https://keemcodes.com/bikeapp/)
 
