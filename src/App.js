@@ -8,7 +8,6 @@ import { useState } from "react";
 export default function App() {
   const [cart, setCart] = useState([]);
   function addToCart(bike) {
-    // e.preventDefault();
     setCart((prev) => [...prev, bike]);
   }
   return (

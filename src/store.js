@@ -1,8 +1,6 @@
 import { bikeList } from "./data/bikeList";
 import { useState, useEffect } from "react";
-import { Cart } from "./cart";
 export function Store(props) {
-  // console.log(bikeList[0]);
   const [storeFilter, setStoreFilter] = useState();
   const [newBikeList, setNewBikeList] = useState([]);
   function handleStoreFilterChange(e) {
