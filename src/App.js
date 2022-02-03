@@ -12,18 +12,22 @@ export default function App() {
   }
   return (
     <div className="App">
-      <Router basename={'/'}>
+      <Router basename={"/"}>
         <nav>
           <NavLink text="Store" linkTo={`${process.env.PUBLIC_URL}/`} />
           <NavLink text="Cart" linkTo={`${process.env.PUBLIC_URL}/cart`} />
         </nav>
         <Routes>
-          <Route exact path={`${process.env.PUBLIC_URL}/`} element={<Store cart={cart} addToCart={addToCart} />}/>
-            {/* <Store cart={cart} addToCart={addToCart} /> */}
-          {/* </Route> */}
-          <Route exact path={`${process.env.PUBLIC_URL}/cart`} element={<Cart cart={cart} addToCart={addToCart} />}/>
-            {/* <Cart cart={cart} addToCart={addToCart} /> */}
-          {/* </Route> */}
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/`}
+            element={<Store cart={cart} addToCart={addToCart} />}
+          />
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/cart`}
+            element={<Cart cart={cart} addToCart={addToCart} />}
+          />
         </Routes>
       </Router>
     </div>
